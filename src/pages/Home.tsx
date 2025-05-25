@@ -1,39 +1,31 @@
-const integrantes = [
-  {
-    nombre: "Leonel Jesús D Elia",
-    portfolio: "https://github.com/lDelia43",
-  },
-  {
-    nombre: "Integrante 2",
-    portfolio: "https://portfolio2.example.com",
-  },
-  {
-    nombre: "Integrante 3",
-    portfolio: "https://portfolio3.example.com",
-  },
-]
+import banner from "../../public/images/banner.png"
 
 export default function Home() {
   return (
-    <section>
-      <h1 className="text-4xl font-bold mb-6 text-primary">Grupo 6 - Parque Temático</h1>
-
-      <h2 className="text-2xl font-semibold mb-4">Integrantes</h2>
-      <ul className="list-disc list-inside mb-6">
-        {integrantes.map(({ nombre, portfolio }) => (
-          <li key={nombre}>
-            {nombre} -{" "}
-            <a
-              href={portfolio}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:underline"
-            >
-              Portfolio
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div>
+      <img src={banner} alt="banner" className="w-full md:max-h-[250px]" />
+      <div className="p-6 flex justify-center">
+        <div className="border border-neutral-300 bg-white rounded-lg shadow-md p-12">
+            <h1 className="text-4xl font-bold mb-6 text-black">Datos del equipo</h1>
+            <div className="flex flex-col gap-4">
+              <h2>
+                <strong>Número del equipo:</strong> 6
+              </h2>
+              <h2>
+                <strong>Nombre del equipo:</strong> Aqualandia
+              </h2>
+              <h2>
+                <strong>Año y curso:</strong> 516035 - 2025-1C
+              </h2>
+              <h2>
+                <strong>Materia:</strong> Diseño y Desarrollo Web
+              </h2>
+              <h2>
+                <strong>Docente:</strong> Litovicius, Patricia Carina
+              </h2>
+            </div>
+        </div>
+      </div>
+    </div>
   )
 }
