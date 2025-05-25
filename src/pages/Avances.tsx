@@ -1,6 +1,6 @@
 export default function Avances() {
   return (
-    <section>
+    <div>
       <h1 className="text-4xl font-bold mb-6 text-primary">Avances del Proyecto - Parque Temático</h1>
 
       <section className="mb-6">
@@ -65,6 +65,6 @@ export default function Avances() {
           </li>
         </ul>
       </section>
-    </section>
+    </div>
   )
 }

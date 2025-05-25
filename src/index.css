@@ -25,3 +25,10 @@
   --color-neutral-light: #f1f5f9; /* Gris muy claro (background) */
   --color-neutral-dark: #2c3e50;  /* Gris oscuro (textos fuertes) */
 }
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
