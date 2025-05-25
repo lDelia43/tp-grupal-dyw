@@ -85,7 +85,7 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
         {!isMobile && (
           <button
             onClick={toggleSidebar}
-            className="self-end m-4 p-2 rounded hover:bg-primary transition"
+            className="self-end m-4 p-2 rounded hover:bg-accent transition"
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -109,8 +109,8 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
                 to={to}
                 onClick={handleLinkClick}
                 className={`
-                  flex items-center gap-3 px-4 py-3 rounded cursor-pointer hover:bg-primary transition
-                  ${active ? "bg-primary font-semibold" : ""}
+                  flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-accent transition
+                  ${active ? "bg-accent font-semibold" : ""}
                   ${!isOpen && "justify-center"}
                 `}
               >
