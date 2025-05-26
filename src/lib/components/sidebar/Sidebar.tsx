@@ -5,7 +5,7 @@ import { Menu, X, Activity, Box, Home } from "lucide-react";
 const links = [
   { to: "/avances", label: "Avances", icon: <Activity size={20} /> },
   { to: "/proyecto", label: "Proyecto", icon: <Box size={20} /> },
-  { to: "/home", label: "Inicio", icon: <Home size={20} /> },
+  { to: "/home", label: "Home", icon: <Home size={20} /> },
 ];
 
 interface SidebarProps {
