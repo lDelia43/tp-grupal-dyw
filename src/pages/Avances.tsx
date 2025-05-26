@@ -1,7 +1,7 @@
 export default function Avances() {
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-6 text-primary">Avances del Proyecto - Parque Temático</h1>
+      <h1 className="text-4xl font-bold mb-6 text-amber-500">Avances del Proyecto - Parque Temático</h1>
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Introducción</h2>
