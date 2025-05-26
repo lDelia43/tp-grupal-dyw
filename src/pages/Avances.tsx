@@ -58,10 +58,10 @@ export default function Avances() {
             proyecto.
           </li>
           <li>
-            <strong>Integrante 2</strong> - Diseñador UX/UI, creación de wireframes y diseño visual.
+            <strong>Bautista Lammertyn</strong> - Diseñador UX/UI, creación de wireframes y diseño visual.
           </li>
           <li>
-            <strong>Bautista Lammertyn</strong> - Comunicador Web, redacción de contenidos y documentación.
+            <strong>Integrante 3</strong> - Comunicador Web, redacción de contenidos y documentación.
           </li>
         </ul>
       </section>
