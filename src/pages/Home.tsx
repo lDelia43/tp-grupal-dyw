@@ -23,6 +23,31 @@ export default function Home() {
               <h2>
                 <strong>Docente:</strong> Litovicius, Patricia Carina
               </h2>
+              <h2>
+              <strong>Integrantes:</strong>
+            </h2>
+            <ul className="list-disc list-inside ml-4">
+              <li>
+                <a href="https://linkedin.com/in/integrante1" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  Leonel Jesús D Elia
+                </a>
+              </li>
+              <li>
+                <a href="https://blammertyn.github.io/nuevaPagDefinitiva/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  Bautista Lammertyn
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/integrante3" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  Integrante 3
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/integrante4" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  Integrante 4
+                </a>
+              </li>
+            </ul>
             </div>
         </div>
       </div>
