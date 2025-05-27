@@ -27,7 +27,7 @@ function App() {
         >
           <main className="flex-1 bg-primary overflow-auto">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/Home" element={<Home />} />
               <Route path="/avances" element={<Avances />} />
               <Route path="/proyecto" element={<Proyecto />} />
             </Routes>
