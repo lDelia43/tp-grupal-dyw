@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Proyecto from "./pages/Proyecto";
 import Avances from "./pages/Avances";
 import Home from "./pages/Home";
@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/tp-grupal-dyw">
+    <BrowserRouter basename="/tp-grupal-dyw/">
       <div className="min-h-screen flex w-full">
         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} isMobile={isMobile} />
 
@@ -30,6 +30,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/avances" element={<Avances />} />
               <Route path="/proyecto" element={<Proyecto />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
 

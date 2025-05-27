@@ -28,7 +28,7 @@ export default function Home() {
             </h2>
             <ul className="list-disc list-inside ml-4">
               <li>
-                <a href="https://linkedin.com/in/integrante1" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                <a href="https://ldelia43.github.io/dyw-8/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                   Leonel Jesús D Elia
                 </a>
               </li>
