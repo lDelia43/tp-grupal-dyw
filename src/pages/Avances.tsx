@@ -1,5 +1,4 @@
 import aquapark from "../../public/images/aquapark.png";
-
 export default function Avances() {
   return (
     <div>
@@ -22,10 +21,11 @@ export default function Avances() {
           <li>Íconos: Estilo divertido y amigable.</li>
           <li>Logo: Versión preliminar creada con diseño simple y colores de la paleta.</li>
         </ul>
-        <div className="border p-4 bg-aqua-light rounded text-center font-bold text-aqua-dark">
-          Logo preliminar aquí 
-          <img src={aquapark} alt="logo" className="w-full md:max-h-[50px]" />
+          <div className="border p-4 bg-aqua-light rounded text-center font-bold text-aqua-dark">
+          Logo preliminar aquí
+          <img src={aquapark}  alt="Imagen centrada" className="logo" /> 
         </div>
+        
       </section>
 
       <section className="mb-6">
