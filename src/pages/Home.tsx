@@ -43,8 +43,8 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/integrante4" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  Integrante 4
+                <a href="https://github.com/tliuboschitz/ejercicio_integrador" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  Tobias Liuboschitz
                 </a>
               </li>
             </ul>
