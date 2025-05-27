@@ -38,8 +38,8 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/integrante3" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  Integrante 3
+                <a href="https://matiasl07.github.io/UVA2Obligatorio.github.io/git " target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  Matias Ariel Lepe
                 </a>
               </li>
               <li>
