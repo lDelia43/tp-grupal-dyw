@@ -16,13 +16,23 @@ interface SidebarProps {
 
 export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
   const location = useLocation();
-
   const [userToggled, setUserToggled] = useState(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-    setUserToggled(true);
+    if (isMobile) {
+      setIsOpen(!isOpen);
+      setUserToggled(true);
+    }
   };
+
+  useEffect(() => {
+    if (!isMobile) {
+      setIsOpen(true);
+    }
+    if(isMobile){
+      setIsOpen(false);
+    }
+  }, [isMobile, setIsOpen]);
 
   useEffect(() => {
     if (userToggled) {
@@ -40,14 +50,16 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
 
   return (
     <div>
-      {/* Botón hamburguesa / cerrar fixed en mobile arriba derecha */}
-      <button
-        onClick={toggleSidebar}
-        className="md:hidden fixed top-4 right-4 z-50 text-neutral-900 bg-white p-2 rounded shadow"
-        aria-label="Toggle sidebar"
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+      {/* Botón hamburguesa / cerrar solo en mobile */}
+      {isMobile && !isOpen && (
+        <button
+          onClick={toggleSidebar}
+          className="md:hidden fixed top-4 right-4 z-50 text-neutral-900 bg-white p-2 rounded shadow"
+          aria-label="Toggle sidebar"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      )}
 
       {/* Overlay en mobile cuando sidebar abierto */}
       {isMobile && isOpen && (
@@ -74,15 +86,14 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
               ? isOpen
                 ? "translate-x-0 w-64"
                 : "-translate-x-full w-64"
-              : isOpen
-              ? "w-64 relative translate-x-0"
-              : "w-16 relative translate-x-0"
+              : "w-64 translate-x-0 relative"
           }
           flex flex-col
           md:flex-shrink-0
         `}
       >
-        {!isMobile && (
+        {/* No mostrar botón toggle en desktop */}
+        {isMobile && (
           <button
             onClick={toggleSidebar}
             className="self-end m-4 p-2 rounded hover:bg-accent transition"
@@ -94,8 +105,8 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
 
         {/* Título solo cuando abierto */}
         {isOpen && (
-          <h2 className="text-2xl font-bold mb-8 px-4 select-none mt-12 md:mt-0">
-            TP Grupal
+          <h2 className="text-2xl font-bold mb-8 px-4 select-none mt-12">
+            Aqualandia
           </h2>
         )}
 

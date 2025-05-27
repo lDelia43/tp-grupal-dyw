@@ -7,7 +7,7 @@ import Sidebar from "./lib/components/sidebar/Sidebar";
 import Footer from "./lib/components/footer/Footer";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
