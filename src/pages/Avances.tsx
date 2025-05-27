@@ -1,3 +1,5 @@
+import aquapark from "../../public/images/aquapark.png";
+
 export default function Avances() {
   return (
     <div>
@@ -22,7 +24,7 @@ export default function Avances() {
         </ul>
         <div className="border p-4 bg-aqua-light rounded text-center font-bold text-aqua-dark">
           Logo preliminar aquí 
-          <img src={aquapark.png} alt="logo" className="w-full md:max-h-[50px]" />
+          <img src={aquapark} alt="logo" className="w-full md:max-h-[50px]" />
         </div>
       </section>
 
