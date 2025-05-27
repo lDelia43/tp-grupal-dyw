@@ -19,7 +19,6 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
   const [userToggled, setUserToggled] = useState(false);
 
   const toggleSidebar = () => {
-    // Solo permitir toggle en mobile
     if (isMobile) {
       setIsOpen(!isOpen);
       setUserToggled(true);
@@ -27,9 +26,11 @@ export default function Sidebar({ isOpen, setIsOpen, isMobile }: SidebarProps) {
   };
 
   useEffect(() => {
-    // En desktop, siempre forzar isOpen a true
     if (!isMobile) {
       setIsOpen(true);
+    }
+    if(isMobile){
+      setIsOpen(false);
     }
   }, [isMobile, setIsOpen]);
 
