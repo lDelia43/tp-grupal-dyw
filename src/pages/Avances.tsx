@@ -63,6 +63,9 @@ export default function Avances() {
           <li>
             <strong>Matias Ariel Lepe</strong> - Comunicador Web, redacción de contenidos y documentación.
           </li>
+           <li>
+            <strong>Tobias Liuboschitz</strong> - Maquetador
+          </li>
         </ul>
       </section>
     </div>
