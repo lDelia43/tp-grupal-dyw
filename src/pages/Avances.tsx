@@ -2,9 +2,7 @@ import aquapark from "../../public/images/aquapark.png";
 
 export default function Avances() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold mb-6 text-amber-500">Avances del Proyecto - Parque Temático</h1>
-
+    <div className="p-12">
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Introducción</h2>
         <p>
@@ -22,9 +20,8 @@ export default function Avances() {
           <li>Íconos: Estilo divertido y amigable.</li>
           <li>Logo: Versión preliminar creada con diseño simple y colores de la paleta.</li>
         </ul>
-        <div className="border p-4 bg-aqua-light rounded text-center font-bold text-aqua-dark">
-          Logo preliminar aquí 
-          <img src={aquapark} alt="logo" className="w-full md:max-h-[50px]" />
+        <div className="border p-4 bg-aqua-light rounded text-center font-bold text-aqua-dark flex justify-center">
+          <img src={aquapark} alt="logo" className="max-w-1/2" />
         </div>
       </section>
 
