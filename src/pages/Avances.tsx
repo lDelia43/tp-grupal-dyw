@@ -21,7 +21,8 @@ export default function Avances() {
           <li>Logo: Versión preliminar creada con diseño simple y colores de la paleta.</li>
         </ul>
         <div className="border p-4 bg-aqua-light rounded text-center font-bold text-aqua-dark">
-          Logo preliminar aquí (placeholder)
+          Logo preliminar aquí 
+          <img src={aquapark.png} alt="logo" className="w-full md:max-h-[50px]" />
         </div>
       </section>
 
@@ -40,7 +41,7 @@ export default function Avances() {
         <p>
           Wireframes y prototipos están disponibles en:{" "}
           <a
-            href="https://www.figma.com/file/ejemplo"
+            href="https://www.figma.com/design/6dC3oXx6ZNhIGs7MOQawyW/Trabajo-práctico-Obligatorio-Avances-Proyecto-Grupal?node-id=21-3&t=CpXfaaxBmwHBTWB6-0"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:underline"
@@ -61,7 +62,7 @@ export default function Avances() {
             <strong>Bautista Lammertyn</strong> - Diseñador UX/UI, creación de wireframes y diseño visual.
           </li>
           <li>
-            <strong>Integrante 3</strong> - Comunicador Web, redacción de contenidos y documentación.
+            <strong>Matias Ariel Lepe</strong> - Comunicador Web, redacción de contenidos y documentación.
           </li>
         </ul>
       </section>
