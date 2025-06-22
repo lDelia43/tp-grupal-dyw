@@ -19,7 +19,7 @@ export default function Avances() {
           <li>Íconos: Estilo divertido y amigable.</li>
           <li>Logo: Versión preliminar creada con diseño simple y colores de la paleta.</li>
         </ul>
-          <div className="border p-4 rounded text-center font-bold text-aqua-dark">
+          <div className="p-4 rounded text-center font-bold text-aqua-dark">
           <img src={aquapark}  alt="Imagen centrada" className="logo" /> 
         </div>
         

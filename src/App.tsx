@@ -25,7 +25,7 @@ function App() {
         <div
           className="flex flex-col flex-1 overflow-hidden"
         >
-          <main className="flex-1 bg-primary overflow-auto">
+          <main className="flex-1 bg-primary overflow-auto md:ml-64">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/avances" element={<Avances />} />
