@@ -28,7 +28,7 @@ export default function Avances() {
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Mapa del Sitio</h2>
-        <div className="flex justify-center">
+        <div className="flex">
           <img src={mapa} alt="Mapa del sitio" className="rounded shadow max-w-full h-auto" style={{ maxHeight: 350 }} />
         </div>
       </section>
