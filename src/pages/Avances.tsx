@@ -28,12 +28,6 @@ export default function Avances() {
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Mapa del Sitio</h2>
-        <p>Se prevé incluir secciones como Home, Avances y Proyecto, cada una con funciones específicas.</p>
-        <ul className="list-disc list-inside mb-4">
-          <li>Home: Presentación del grupo y portafolios.</li>
-          <li>Avances: Documentación y avances del proyecto.</li>
-          <li>Proyecto: Página en construcción.</li>
-        </ul>
         <div className="flex justify-center">
           <img src={mapa} alt="Mapa del sitio" className="rounded shadow max-w-full h-auto" style={{ maxHeight: 350 }} />
         </div>
