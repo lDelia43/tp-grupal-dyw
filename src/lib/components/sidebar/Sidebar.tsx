@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Activity, Box, Home } from "lucide-react";
-import logo from "../../../../public/images/aquapark.png";
+import logo from "../../../../public/images/logo.png";
 
 const links = [
   { to: "/avances", label: "Avances", icon: <Activity size={20} /> },

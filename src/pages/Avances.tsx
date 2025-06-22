@@ -1,4 +1,6 @@
-import aquapark from "../../public/images/aquapark.png";
+import aquapark from "../../public/images/logo.png";
+import mapa from "../assets/images/mapa.jpg";
+
 export default function Avances() {
   return (
     <div className="p-12">
@@ -19,20 +21,22 @@ export default function Avances() {
           <li>Íconos: Estilo divertido y amigable.</li>
           <li>Logo: Versión preliminar creada con diseño simple y colores de la paleta.</li>
         </ul>
-          <div className="p-4 rounded text-center font-bold text-aqua-dark">
-          <img src={aquapark}  alt="Imagen centrada" className="logo" /> 
+        <div className="p-4 rounded text-center font-bold text-aqua-dark">
+          <img src={aquapark} alt="Imagen centrada" className="logo mx-auto" />
         </div>
-        
       </section>
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Mapa del Sitio</h2>
         <p>Se prevé incluir secciones como Home, Avances y Proyecto, cada una con funciones específicas.</p>
-        <ul className="list-disc list-inside">
+        <ul className="list-disc list-inside mb-4">
           <li>Home: Presentación del grupo y portafolios.</li>
           <li>Avances: Documentación y avances del proyecto.</li>
           <li>Proyecto: Página en construcción.</li>
         </ul>
+        <div className="flex justify-center">
+          <img src={mapa} alt="Mapa del sitio" className="rounded shadow max-w-full h-auto" style={{ maxHeight: 350 }} />
+        </div>
       </section>
 
       <section className="mb-6">
@@ -63,7 +67,7 @@ export default function Avances() {
           <li>
             <strong>Matias Ariel Lepe</strong> - Comunicador Web, redacción de contenidos y documentación.
           </li>
-           <li>
+          <li>
             <strong>Tobias Liuboschitz</strong> - Maquetador
           </li>
         </ul>
