@@ -1,11 +1,23 @@
 import banner from "../../public/images/banner.png"
+import logo from "../../public/images/logo.png";
+
 
 export default function Home() {
   return (
     <div>
-      <img src={banner} alt="banner" className="w-full md:max-h-[250px]" />
-      <div className="p-6 flex justify-center">
-        <div className="border border-neutral-300 bg-white rounded-lg shadow-md p-12">
+      <header className="flex justify-between items-center p-4 bg-white shadow-md">
+        <img src={logo} alt="Logo del grupo" className="h-12" />
+        <nav className="space-x-6 text-blue-700 font-medium">
+          <a href="/home">Home</a>
+          <a href="/avances">Avances</a>
+          <a href="/proyecto">Proyecto</a>
+        </nav>
+      </header>
+
+      <main>
+        <img src={banner} alt="banner" className="w-full md:max-h-[250px]" />
+        <div className="p-6 flex justify-center">
+          <div className="border border-neutral-300 bg-white rounded-lg shadow-md p-12">
             <h1 className="text-4xl font-bold mb-6 text-black">Datos del equipo</h1>
             <div className="flex flex-col gap-4">
               <h2>
@@ -51,6 +63,7 @@ export default function Home() {
             </div>
         </div>
       </div>
+      </main>
     </div>
   )
 }
